@@ -1,88 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="description"
-        content="Jigsaw3D: Disentangled 3D Style Transfer via Patch Shuffling and Masking.">
-  <meta name="keywords" content="Jigsaw3D, 3D Style Transfer, NeRF, Disentangled">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jigsaw3D: Disentangled 3D Style Transfer via Patch Shuffling and Masking</title>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Jigsaw3D: Disentangled 3D Style Transfer via Patch Shuffling and Masking.">
+  <meta name="keywords" content="Jigsaw3D, 3D Style Transfer, NeRF, Disentangled">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jigsaw3D: Disentangled 3D Style Transfer via Patch Shuffling and Masking</title>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+    function gtag() {
+      dataLayer.push(arguments);
+    }
 
-    gtag('js', new Date());
+    gtag('js', new Date());
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
 
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
 
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
 </head>
 <body>
-
-<!-- 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav> -->
-
-
 
 <section class="hero">
   <div class="hero-body">
@@ -120,7 +76,6 @@
             <span class="author-block"><sup>2</sup>Huazhong University of Science & Technology,</span>
             <span class="author-block"><sup>3</sup>The Hong Kong University of Science and Technology</span>
           </div>
-
 
           <div class="column has-text-centered">
             <div class="publication-links">
@@ -161,19 +116,9 @@
                       <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
-                  </a>
+                </a>
               </span>
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a> -->
             </div>
-
           </div>
         </div>
       </div>
@@ -181,46 +126,27 @@
   </div>
 </section>
 
-
-<!-- 游乐园的 -->
+<!-- 主展示视频 - 游乐园多物体场景 -->
 <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="multi-objects-scene" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/游乐园-2k.mp4"
-                type="video/mp4">
-      </video>
-<!--       <h2 class="subtitle has-text-centered">
-        we propose a **Jigsaw3D** to transfer the style of a reference image to 3D objects.
-      </h2> -->
-    </div>
-  </div>
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="amusement-park-multi" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/游乐园-2k.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
 </section>
 
-
-
-<!-- 这里差一个 多个3D objet 多个 Reference image 得到的结果 -->
- 
-<!-- 游乐园的 单个物体 -->
+<!-- 游乐园单个物体 -->
 <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="multi-objects-scene" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/游乐园-单个物体-4k.mp4"
-                type="video/mp4">
-      </video>
-<!--       <h2 class="subtitle has-text-centered">
-        we propose a **Jigsaw3D** to transfer the style of a reference image to 3D objects.
-      </h2> -->
-    </div>
-  </div>
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="amusement-park-single" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/游乐园-单个物体-4k.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
 </section>
-
-
-<!-- 平铺材质的 -->
-
-<!-- partial的 -->
-
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -250,83 +176,90 @@
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
   </div>
 </section>
 
-
+<!-- 房子场景 -->
 <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="multi-objects-scene" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/改尺寸后-房子场景-2K.mp4"
-                type="video/mp4">
-      </video>
-<!--       <h2 class="subtitle has-text-centered">
-        we propose a **Jigsaw3D** to transfer the style of a reference image to 3D objects.
-      </h2> -->
-    </div>
-  </div>
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="house-scene" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/改尺寸后-房子场景-2K.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
 </section>
 
+<!-- 可以添加更多视频展示部分 -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-3">更多结果展示</h2>
+        
+        <!-- 平铺材质视频 -->
+        <div class="content">
+          <h3 class="title is-4">平铺材质生成</h3>
+          <video controls playsinline style="width: 100%;">
+            <source src="./static/videos/tileable-textures.mp4" type="video/mp4">
+            您的浏览器不支持HTML5视频标签。
+          </video>
+        </div>
 
-
+        <!-- 部分风格化视频 -->
+        <div class="content">
+          <h3 class="title is-4">部分风格化</h3>
+          <video controls playsinline style="width: 100%;">
+            <source src="./static/videos/partial-stylization.mp4" type="video/mp4">
+            您的浏览器不支持HTML5视频标签。
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{ye2024jigsaw3d,
-  author    = {Ye, Yuteng and Zhang, Zheng and Zhang, Qinchuan and Wang, Di and Zhang, Youjia and Zhang, Wenxiao and Yang, Wei and Liu, Yuan},
-  title     = {Jigsaw3D: Disentangled 3D Style Transfer via Patch Shuffling and Masking},
-  journal   = {arXiv preprint},
-  year      = {2025},
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{ye2024jigsaw3d,
+  author    = {Ye, Yuteng and Zhang, Zheng and Zhang, Qinchuan and Wang, Di and Zhang, Youjia and Zhang, Wenxiao and Yang, Wei and Liu, Yuan},
+  title     = {Jigsaw3D: Disentangled 3D Style Transfer via Patch Shuffling and Masking},
+  journal   = {arXiv preprint},
+  year      = {2025},
 }</code></pre>
-  </div>
+  </div>
 </section>
 
-
 <footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="#">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/jigsaw3d/jigsaw3d" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/jigsaw3d/jigsaw3d.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="#">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/jigsaw3d/jigsaw3d" class="external-link">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/jigsaw3d/jigsaw3d.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 
 </body>
