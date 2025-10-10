@@ -67,7 +67,7 @@
               <strong>Wei Yang</strong><sup>2</sup>,
             </span>
             <span class="author-block">
-              <strong>Yuan Liu</strong><sup>3</sup>
+              <strong>Yuan Liu</strong><sup>3†</sup>
             </span>
           </div>
               
@@ -75,6 +75,9 @@
             <span class="author-block"><sup>1</sup>Huawei, Media Innovation Lab,</span>
             <span class="author-block"><sup>2</sup>Huazhong University of Science & Technology,</span>
             <span class="author-block"><sup>3</sup>The Hong Kong University of Science and Technology</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>†</sup>Corresponding author</span>
           </div>
 
           <div class="column has-text-centered">
@@ -132,10 +135,7 @@
     <div class="hero-body">
       <h3 class="title is-4">游乐园多物体场景风格化</h3>
       <div class="content has-text-justified">
-        <p>
-          使用Jigsaw3D，我们能够对复杂的多物体3D场景进行风格化处理，同时保持多视角一致性和场景完整性。
-          这里展示了游乐园场景的风格化效果，将原始3D模型转换为具有艺术风格的全新外观。
-        </p>
+        <p>JIGSAW3D transfers stylistic statistics from 2D images to multiple, diverse 3D meshes.</p>
       </div>
       <div class="content has-text-centered">
         <video id="amusement-park-video"
@@ -158,10 +158,7 @@
     <div class="hero-body">
       <h3 class="title is-4">游乐园单个物体风格化</h3>
       <div class="content has-text-justified">
-        <p>
-          针对单个3D物体的风格化展示，Jigsaw3D能够精确地将参考图像中的风格特征转移到3D模型上，
-          同时保持几何结构的完整性和多视角一致性。
-        </p>
+        <p>Stylization results on individual 3D objects.</p>
       </div>
       <div class="content has-text-centered">
         <video id="single-object-video"
@@ -209,21 +206,14 @@
   </div>
 </section>
 
-
-<!-- 更多结果展示部分 -->
+<!-- 平铺材质视频 -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column">
-        <h2 class="title is-3">更多结果展示</h2>
-        
-        <!-- 平铺材质视频 -->
-        <h3 class="title is-4">平铺材质生成</h3>
+        <h3 class="title is-4">Tileable Texture Generation</h3>
         <div class="content has-text-justified">
-          <p>
-            Jigsaw3D能够生成无缝平铺的材质纹理，这些纹理可以直接应用于3D模型表面，
-            实现高质量的风格化效果，同时保持纹理的连续性和一致性。
-          </p>
+          <p>Our jigsaw-based approach generates seamless tileable textures without seam artifacts, outperforming traditional methods like Blender.</p>
         </div>
         <div class="content has-text-centered">
           <video id="tileable-textures-video"
@@ -238,12 +228,9 @@
         </div>
 
         <!-- 部分风格化视频 -->
-        <h3 class="title is-4">部分风格化</h3>
+        <h3 class="title is-4">Partial Object Stylization</h3>
         <div class="content has-text-justified">
-          <p>
-            我们的方法支持对3D模型进行部分风格化处理，用户可以指定特定的区域应用风格，
-            而其他区域保持原有外观，实现更精细的控制和更丰富的视觉效果。
-          </p>
+          <p>Jigsaw3D infers and applies globally consistent styles from partial reference images, demonstrating robust style understanding.</p>
         </div>
         <div class="content has-text-centered">
           <video id="partial-stylization-video"
@@ -258,12 +245,9 @@
         </div>
 
         <!-- 房子场景 -->
-        <h3 class="title is-4">房子场景风格化</h3>
+        <h3 class="title is-4">Architectural Scene Stylization</h3>
         <div class="content has-text-justified">
-          <p>
-            在复杂的建筑场景中，Jigsaw3D能够保持结构的完整性和多视角一致性，
-            同时将参考图像的艺术风格精确地转移到整个3D场景中。
-          </p>
+          <p>Our method maintains structural integrity and multi-view consistency while transferring artistic styles to complex architectural scenes.</p>
         </div>
         <div class="content has-text-centered">
           <video id="house-scene-video"
@@ -276,7 +260,6 @@
                     type="video/mp4">
           </video>
         </div>
-
       </div>
     </div>
   </div>
